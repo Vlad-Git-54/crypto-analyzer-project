@@ -46,8 +46,11 @@ def view_crypto(coin: str, request: Request):
     data = get_data(coin)
     if not data:
         raise HTTPException(404, detail="Data not found")
-    return templates.TemplateResponse("index.html", {"request": request, "coin": data.coin, "price": data.price})
-
+    return templates.TemplateResponse(
+        request=request, 
+        name="index.html", 
+        context={"coin": data.coin, "price": data.price}
+    )
 # Анализ и визуализация
 @crypto_router.get("/analyze/{coin}")
 async def analyze(coin: str):
