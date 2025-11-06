@@ -1,8 +1,7 @@
 # Модели и операции с базой данных.
 
 from sqlalchemy import create_engine, Column, Integer, String, Float
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import declarative_base, sessionmaker
 
 # Подключение к SQLite 
 engine = create_engine("sqlite:///crypto.db")
