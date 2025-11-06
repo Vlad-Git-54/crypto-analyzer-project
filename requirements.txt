@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+sqlalchemy
+pydantic
+jinja2
+pandas
+plotly
+aiohttp
+pytest
+pytest-asyncio
