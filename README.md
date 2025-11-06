@@ -4,7 +4,7 @@
 Проект реализован на Python с использованием FastAPI, SQLAlchemy, Pandas и Plotly. Архитектура: MVC (Models - SQLAlchemy модели, Views - Jinja шаблоны, Controllers - FastAPI маршруты) с элементами MVVM для обработки данных во ViewModel-подобных утилитах.
 
 ## UML-диаграмма архитектуры
-architecture.png
+![UML Diagram](architecture.png)
 
 Описание: Диаграмма показывает взаимодействие между App (FastAPI), Controller (маршруты), Model (SQLAlchemy), View (Jinja) и Database (SQLite). Учтены паттерны MVC/MVVM для структурированного кода.
 
