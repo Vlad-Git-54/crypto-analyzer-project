@@ -11,6 +11,8 @@ from utils import (async_task, threaded_task, process_task, expensive_function,
 import asyncio
 import pandas as pd
 import plotly.express as px
+import threading
+from multiprocessing import Process
 
 crypto_router = APIRouter(prefix="/crypto")
 
