@@ -6,7 +6,7 @@ from sqlalchemy.orm import sessionmaker
 
 # Подключение к SQLite 
 engine = create_engine("sqlite:///crypto.db")
-Base = sqlalchemy.orm.declarative_base()
+Base = declarative_base()
 Session = sessionmaker(bind=engine)
 
 # Модель данных
